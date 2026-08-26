@@ -185,141 +185,137 @@ PROGRESS BAR
 /*==========================
 NAVBAR
 ==========================*/
+/* ==========================
+        NAVBAR
+========================== */
 
 .navbar{
 
-    position:fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
 
-    top:0;
+    width: 100%;
+    height: 80px;
 
-    left:0;
+    padding: 0 25px;
 
-    width:100%;
+    display: flex;
+    align-items: center;
 
-    padding:12px 6%;
+    background: rgba(8,14,28,.90);
+    backdrop-filter: blur(15px);
 
-    display:flex;
+    border-bottom: 1px solid rgba(255,255,255,.08);
 
-    justify-content:space-between;
-
-    align-items:center;
-
-    backdrop-filter:blur(15px);
-
-    background:rgba(8,14,28,.85);
-
-    border-bottom:1px solid rgba(255,255,255,.08);
-
-    z-index:999;
-
+    z-index: 999;
 }
+
+/* Left */
 
 .logo{
 
     display:flex;
-
     align-items:center;
-
     gap:12px;
 
+    flex:1;
 }
 
 .logo img{
 
-    width:42px;
-
+    width:50px;
+    height:50px;
 }
 
-.logo h3{
+.logo-text h3{
 
     color:var(--primary);
-
-    font-size:17px;
-
+    font-size:22px;
+    margin:0;
 }
 
-.logo span{
+.logo-text span{
 
     color:var(--gray);
-
-    font-size:11px;
-
+    font-size:13px;
 }
+
+/* Center */
 
 .nav-links{
 
     display:flex;
+    justify-content:center;
+    align-items:center;
 
-    gap:22px;
+    flex:2;
+
+    gap:26px;
 
     list-style:none;
-
 }
 
 .nav-links a{
 
-    color:white;
+    color:#fff;
 
     text-decoration:none;
 
-    transition:.35s;
+    font-size:16px;
 
     font-weight:500;
 
+    transition:.3s;
 }
 
 .nav-links a:hover{
 
     color:var(--primary);
-
 }
+
+/* Right */
 
 .nav-icons{
 
     display:flex;
-
-    margin-left:auto;
-
-    gap:14px;
-
+    justify-content:flex-end;
     align-items:center;
 
+    flex:1;
+
+    gap:18px;
 }
 
 .nav-icons a{
 
     color:white;
 
-    font-size:18px;
+    font-size:20px;
 
-    transition:.35s;
-
+    transition:.3s;
 }
 
 .nav-icons a:hover{
 
     color:var(--primary);
-
 }
 
 #themeToggle{
 
-    width:38px;
-
-    height:38px;
-
-    border-radius:50%;
+    width:40px;
+    height:40px;
 
     border:none;
+
+    border-radius:50%;
 
     background:var(--card);
 
     color:white;
 
     cursor:pointer;
-
 }
-
 /*==========================
 HERO
 ==========================*/
